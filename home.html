@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<title>Головна</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20231214160120">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll data-scroll-show="500" class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a href="rooms.html" class="menu__link">Номери</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Послуги</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__info">
+					<a href="tel:+380664397774" class="header__tel" data-da=".menu__body,570">+38 (066)
+						439-77-74</a>
+					<a href="rooms.html" class="header__button" data-da=".menu__body,400">Забронювати номер</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="hero-home">
+				<div class="hero-home__slider swiper">
+					<div class="hero-home__wrapper swiper-wrapper">
+						<div class="hero-home__slide hero-home__slide-1 swiper-slide">
+							<div class="hero-home__body">
+								<div class="hero-home__logo">
+									<img src="img/logo.svg" alt="Логотип">
+								</div>
+								<h5 class="hero-home__subtitle">ЗАМОК</h5>
+								<h1 class="hero-home__title">ПАНОРАМА</h1>
+							</div>
+							<video autoplay muted loop playsinline preload="auto" class="hero-home__video">
+								<source src="img/hero-home/video.webm" type="video/webm">
+								<source src="img/hero-home/video.mp4" type="video/mp4">
+							</video>
+						</div>
+						<div class="hero-home__slide hero-home__slide-2 swiper-slide">
+							<!-- <div class="hero-home__body">
+								<div class="hero-home__logo">
+									<img src="img/logo.svg" alt="Logo">
+								</div>
+								<h5 class="hero-home__subtitle">ЗАМОК</h5>
+								<h1 class="hero-home__title">ПАНОРАМА</h1>
+							</div> -->
+							<picture><source data-srcset="img/hero-home/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-home/01.jpg" alt="Зображення"></picture>
+						</div>
+						<div class="hero-home__slide hero-home__slide-3 swiper-slide">
+							<!-- <div class="hero-home__body">
+								<div class="hero-home__logo">
+									<img src="img/logo.svg" alt="Logo">
+								</div>
+								<h5 class="hero-home__subtitle">ЗАМОК</h5>
+								<h1 class="hero-home__title">ПАНОРАМА</h1>
+							</div> -->
+							<picture><source data-srcset="img/hero-home/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-home/02.jpg" alt="Зображення"></picture>
+						</div>
+						<div class="hero-home__slide hero-home__slide-4 swiper-slide">
+							<!-- <div class="hero-home__body">
+								<div class="hero-home__logo">
+									<img src="img/logo.svg" alt="Logo">
+								</div>
+								<h5 class="hero-home__subtitle">ЗАМОК</h5>
+								<h1 class="hero-home__title">ПАНОРАМА</h1>
+							</div> -->
+							<picture><source data-srcset="img/hero-home/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-home/03.jpg" alt="Зображення"></picture>
+						</div>
+					</div>
+					<div class="hero-home__arrows">
+						<button type="button" class="hero-home__arrow hero-home__arrow--left _icon-arrow-1" type="button"></button>
+						<button type="button" class="hero-home__arrow hero-home__arrow--right _icon-arrow-1" type="button"></button>
+					</div>
+					<div class="hero-home__bullets"></div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__content">
+						<div class="about__wrapper">
+							<div class="about__title-wr" data-watch data-watch-threshold="0.3">
+								<a href="about.html" class="about__title title">Про нас</a>
+							</div>
+							<div class="about__text-wr" data-watch data-watch-threshold="0.2">
+								<div class="about__text text">
+									<p>Східниця — це курортна перлина Львівської області, так звана «Укріїнська Швейцарія».</p>
+									<p>Замок Панорама введений в експлуатацію в січні 2021 року. Площа території 0,3 га.
+										Кількість номерів класу Люкс — 22.
+									</p>
+									<p>Замок Панорама — це симбіоз природи та сучасного дізайну, тиші та чистого гірського
+										повітря.</p>
+								</div>
+							</div>
+						</div>
+						<div class="about__decor-wr" data-watch>
+							<img class="about__decor" src="img/about/decor-green.svg" alt="Декор">
+						</div>
+						<div class="about__button-wr" data-watch data-watch-threshold="0.3">
+							<a href="about.html" class="about__button button">Дізнатись більше</a>
+						</div>
+					</div>
+					<div class="about__image-wr" data-watch data-watch-threshold="0.2">
+						<div class="about__image">
+							<picture><source data-srcset="img/about/image.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/about/image.jpg" alt="Зображення"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="rooms rooms-home">
+				<div class="rooms__container">
+					<div class="rooms__title-wr" data-watch data-watch-threshold="0.3">
+						<h2 class="rooms__title title title--w">НАШІ НОМЕРИ</h2>
+					</div>
+					<div class="rooms__body">
+						<div class="rooms__items">
+							<div class="rooms__item-wr" data-watch data-watch-threshold="0.1">
+								<div class="rooms__item item-rooms">
+									<a href="junior-suite.html" class="item-rooms__link">
+										<picture><source data-srcset="img/rooms/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="item-rooms__image" data-src="img/rooms/01.jpg" alt="Номер"></picture>
+									</a>
+									<div class="item-rooms__content">
+										<h3 class="item-rooms__title title title--w">Півлюкс</h3>
+										<div class="item-rooms__body">
+											<div class="item-rooms__price">900 грн\доба</div>
+											<a href="junior-suite.html" class="item-rooms__details">Детальніше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooms__item-wr" data-watch data-watch-threshold="0.1">
+								<div class="rooms__item item-rooms">
+									<a href="oneroom-suite.html" class="item-rooms__link">
+										<picture><source data-srcset="img/rooms/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="item-rooms__image" data-src="img/rooms/02.jpg" alt="Номер"></picture>
+									</a>
+									<div class="item-rooms__content">
+										<h3 class="item-rooms__title title title--w">Люкс однокімнатний</h3>
+										<div class="item-rooms__body">
+											<div class="item-rooms__price">1100 грн\доба</div>
+											<a href="oneroom-suite.html" class="item-rooms__details">Детальніше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooms__item-wr" data-watch data-watch-threshold="0.1">
+								<div class="rooms__item item-rooms">
+									<a href="apartments.html" class="item-rooms__link">
+										<picture><source data-srcset="img/rooms/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="item-rooms__image" data-src="img/rooms/03.jpg" alt="Номер"></picture>
+									</a>
+									<div class="item-rooms__content">
+										<h3 class="item-rooms__title title title--w">Апартаменти</h3>
+										<div class="item-rooms__body">
+											<div class="item-rooms__price">1500 грн\доба</div>
+											<a href="apartments.html" class="item-rooms__details">Детальніше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooms__item-wr" data-watch data-watch-threshold="0.1">
+								<div class="rooms__item item-rooms">
+									<a href="premium-apartments.html" class="item-rooms__link">
+										<picture><source data-srcset="img/rooms/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="item-rooms__image" data-src="img/rooms/04.jpg" alt="Номер"></picture>
+									</a>
+									<div class="item-rooms__content">
+										<h3 class="item-rooms__title title title--w">Преміум апартаменти</h3>
+										<div class="item-rooms__body">
+											<div class="item-rooms__price">1800 грн\доба</div>
+											<a href="premium-apartments.html" class="item-rooms__details">Детальніше</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rooms__button-wr" data-watch data-watch-threshold="0.5">
+							<a href="rooms.html" class="rooms__button button button--w">Переглянути всі</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="warn warn-gbl" data-watch data-watch-threshold="0.3">
+				<div class="warn__container">
+					<div class="warn__item">
+						<div class="warn__icon">
+							<img src="img/warn/calendar.svg" alt="Іконка календаря">
+						</div>
+						<div class="warn__text">Мінімальний період проживання — 3 доби</div>
+					</div>
+					<div class="warn__item">
+						<div class="warn__icon">
+							<img src="img/warn/handshake.svg" alt="Іконка">
+						</div>
+						<div class="warn__text">Передплата — 30%</div>
+					</div>
+					<div class="warn__item">
+						<div class="warn__icon">
+							<img src="img/warn/discount.svg" alt="Іконка Знижки">
+						</div>
+						<div class="warn__text">Знижка на проживання від 5 діб -15%</div>
+					</div>
+					<div class="warn__item">
+						<div class="warn__icon">
+							<img src="img/warn/person.svg" alt="Іконка людина">
+						</div>
+						<div class="warn__text">Додаткове місце — 100&nbsp;грн</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__container">
+					<div class="advantages__title-wr" data-watch data-watch-threshold="0.3">
+						<h2 class="advantages__title title">Наші переваги</h2>
+					</div>
+					<div class="advantages__body">
+						<div class="advantages__item-wr" data-watch data-watch-threshold="0.2">
+							<div class="advantages__item advantages__item--01 item-advantages">
+								<div class="item-advantages__icon">
+									<img src="img/advantages/01.svg" alt="Розташування">
+								</div>
+								<div class="item-advantages__content">
+									<h4 class="item-advantages__title">Розташування </h4>
+									<div class="item-advantages__text text">
+										<p>Готель розташований у відомому туристичному місці - Східниця. Замок Панорама
+											знаходиться
+											на скелі, завдяки чому відкривається мальовничий огляд на Самбірський заповідник.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantages__item-wr" data-watch data-watch-threshold="0.2">
+							<div class="advantages__item advantages__item--02 item-advantages">
+								<div class="item-advantages__icon">
+									<img src="img/advantages/02.svg" alt="Комфорт">
+								</div>
+								<div class="item-advantages__content">
+									<h4 class="item-advantages__title">Комфорт </h4>
+									<div class="item-advantages__text text">
+										<p>Замок Панорама розташований в 10 хв. від центру пішки. Має великий паркінг, доступ до
+											виклику таксі. Комфортні умови забезпечують гостей якісним відпочинком та новими
+											враженнями.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantages__item-wr" data-watch data-watch-threshold="0.2">
+							<div class="advantages__item advantages__item--03 item-advantages">
+								<div class="item-advantages__icon">
+									<img src="img/advantages/03.svg" alt="Просторі апартаменти">
+								</div>
+								<div class="item-advantages__content">
+									<h4 class="item-advantages__title">Просторі апартаменти </h4>
+									<div class="item-advantages__text text">
+										<p>Доступний широкий вибір просторих апартаментів квартирного типу.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advantages__item-wr" data-watch data-watch-threshold="0.2">
+							<div class="advantages__item advantages__item--04 item-advantages">
+								<div class="item-advantages__icon">
+									<img src="img/advantages/04.svg" alt="Сучасність">
+								</div>
+								<div class="item-advantages__content">
+									<h4 class="item-advantages__title">Сучасність</h4>
+									<div class="item-advantages__text text">
+										<p>Приміщення та готель нові. Ми намагаємось забезпечити сприятливі умови для наших
+											гостей.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="advantages__decor-wr" data-watch data-watch-once>
+						<img class="advantages__decor" src="img/advantages/decor-green.svg" alt="Decor">
+					</div>
+				</div>
+
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__title-wr" data-watch data-watch-threshold="0.3">
+						<h2 class="reviews__title title title--w">Відгуки</h2>
+					</div>
+					<div class="reviews__body">
+						<div class="reviews__slider swiper" data-watch data-watch-threshold="0.2">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__name">Анжеліка</div>
+									<div class="slide-reviews__review text">Дуже вдячні за відпочинок, все сподобалося, тихий
+										готель,все чисто та затишно, уважний персонал та виконані всі умови перебування!!! Дуже
+										дякуємо!!!!</div>
+									<div class="slide-reviews__bottom">
+										<div class="slide-reviews__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.7</div>
+										</div>
+										<!-- <div class="slide-reviews__date">10.11.2023</div> -->
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__name">Юля</div>
+									<div class="slide-reviews__review text">Дуже затишний отель у селищі Східниця! Гарні номери,
+										відмінне обслуговування та чудова територія. Ціни мене приємно здивували. Обов'язково
+										повернусь сюди ще раз!
+									</div>
+									<div class="slide-reviews__bottom">
+										<div class="slide-reviews__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.5</div>
+										</div>
+										<!-- <div class="slide-reviews__date">11.11.2023</div> -->
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__name">Віталій</div>
+									<div class="slide-reviews__review text">Готель дуже сподобався, номери чисті всі меблі
+										справно і виглядають як нові, ціни приємні, поряд знаходиться магазин та кафе так що можна
+										спокійно вийти та поїсти так що раджу всім заселятися у цей готель, та провести
+										максимально добре прибуття у Східниці.</div>
+									<div class="slide-reviews__bottom">
+										<div class="slide-reviews__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.9</div>
+										</div>
+										<!-- <div class="slide-reviews__date">11.11.2023</div> -->
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__name">Сергій</div>
+									<div class="slide-reviews__review text">Одразу хочеться відзначити ввічливий персонал, який
+										завжди був готовий відповісти на всі питання, які нас цікавили та надати необхідну
+										допомогу. Номер, в якому ми проживали, був охайно оформлений і комфортний для проживання,
+										ліжко зручне, з чистенькою постіллю. А вид з балкону доповнив загальне враження красивою
+										панорамою на Східницю. Загалом, цей готель та сам відпочинок залишили у нас хороші
+										враження і ми б хотіли повернулись сюди знову.
+									</div>
+									<div class="slide-reviews__bottom">
+										<div class="slide-reviews__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">5</div>
+										</div>
+										<!-- <div class="slide-reviews__date">10.11.2023</div> -->
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__name">Христина</div>
+									<div class="slide-reviews__review text">Зупинялись на декілька днів. Залишились після
+										проживання гарні спогади. Дуже задоволені комфортабельністю номеру. Просторо, чисто,
+										гарний краєвид. Привітливий персонал. Рекомендую</div>
+									<div class="slide-reviews__bottom">
+										<div class="slide-reviews__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.8</div>
+										</div>
+										<!-- <div class="slide-reviews__date">10.11.2023</div> -->
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__name">Максим</div>
+									<div class="slide-reviews__review text">Рекомендую на всі 100%. Приємний персонал і гарні
+										номери. За таку ціну ви не знайдете кращих апартаментів.</div>
+									<div class="slide-reviews__bottom">
+										<div class="slide-reviews__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">5</div>
+										</div>
+										<!-- <div class="slide-reviews__date">10.11.2023</div> -->
+									</div>
+								</div>
+								<div class="reviews__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__name">Вікторія</div>
+									<div class="slide-reviews__review text">Вибір був зроблений випадково, інтуїтивно, дуже
+										зраділи, що очікування виправдалися. Приєднуємося до всіх позитивних відгуків, і окремо
+										хочеться відзначити комфортну обстановку та вид з номерів на смерековий ліс</div>
+									<div class="slide-reviews__bottom">
+										<div class="slide-reviews__rating rating rating_set">
+											<div class="rating__body">
+												<div class="rating__active"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+											<div class="rating__value">4.9</div>
+										</div>
+										<!-- <div class="slide-reviews__date">10.11.2023</div> -->
+									</div>
+								</div>
+							</div>
+							<button type="button" class="reviews__arrow reviews__arrow--left _icon-arrow-2"></button>
+							<button type="button" class="reviews__arrow reviews__arrow--right _icon-arrow-2"></button>
+							<div class="reviews__scrollbar"></div>
+						</div>
+					</div>
+					<!-- <div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
+						<a href="#" data-popup="#popup" class="reviews__button button button--w">Залишити відгук</a>
+					</div> -->
+				</div>
+			</section>
+			<section class="map" data-watch data-watch-threshold="0.3">
+				<iframe class="map__iframe" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.759335167075!2d23.339518603136653!3d49.22409110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3526b2543f3d%3A0x78020374a5928970!2z0JfQsNC80L7QuiDQn9Cw0L3QvtGA0LDQvNCw!5e0!3m2!1suk!2sua!4v1700473289318!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="map__contacts contacts-map">
+					<h2 class="contacts-map__title">Контакти</h2>
+					<div class="contacts-map__body">
+						<div class="contacts-map__address">
+							<a href="https://www.google.com/maps/place/%D0%97%D0%B0%D0%BC%D0%BE%D0%BA+%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0/@49.2259343,23.3464575,18z/data=!4m10!1m2!2m1!1z0LLRg9C70LjRhtGPINCf0YDQvtC80LjRgdC70L7QstCwLCAzN9CxLCDQodGF0ZbQtNC90LjRhtGPLCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Ywg0L_QsNC90L7RgNC80LA!3m6!1s0x473a3595374ba231:0xbf0b8d1972d3fd3a!8m2!3d49.2256918!4d23.3488759!15sCmvQstGD0LvQuNGG0Y8g0J_RgNC-0LzQuNGB0LvQvtCy0LAsIDM30LEsINCh0YXRltC00L3QuNGG0Y8sINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCDQv9Cw0L3QvtGA0LzQsJIBEWFwYXJ0bWVudF9jb21wbGV44AEA!16s%2Fg%2F11qph_vncn?hl=uk-UK&entry=ttu" target="_blank">Львівська обл., Дрогобицький район, смт. Східниця, вул. Промислова,
+								37-Б</a>
+						</div>
+						<div class="contacts-map__phone">Телелефони: <br>
+							<a href="tel:0664397774">+38 (066)439-77-74</a><br>
+							<a href="tel:0980397774">+38 (098) 039-77-74</a>
+						</div>
+						<div class="contacts-map__email">E-mail:
+							<a href="mailto:panorama.skhodnitsa@gmail.com">panorama.skhodnitsa@gmail.com</a>
+						</div>
+					</div>
+					<a href="rooms.html" class="contacts-map__button button button--w button--fw">Забронювати номер</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer" data-watch data-watch-threshold="0.3">
+			<div class="footer__container">
+				<div class="footer__main main-footer" data-spollers="479.98,max">
+					<details class="main-footer__block main-footer__block--1">
+						<summary class="main-footer__title">Навігація</summary>
+						<ul class="main-footer__list">
+							<li class="main-footer__item">
+								<a href="#" class="main-footer__link">Головна</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="#" class="main-footer__link">Номери</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="#" class="main-footer__link">Послуги</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="#" class="main-footer__link">Про нас</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="#" class="main-footer__link">Контакти</a>
+							</li>
+						</ul>
+					</details>
+					<div class="main-footer__block main-footer__block--2" data-da=".footer__container,991.98,1">
+						<h4 class="main-footer__title">Співпраця з нами</h4>
+						<p class="main-footer__text text">Ми готові обговорити ваші ідеї та спільні можливості!</p>
+						<a target="_blank" href="mailto:panorama.skhodnitsa@gmail.com" class="main-footer__button">Зв’язатись</a>
+					</div>
+					<details class="main-footer__block main-footer__block--3">
+						<summary class="main-footer__title">Корисне</summary>
+						<ul class="main-footer__list">
+							<li class="main-footer__item">
+								<a href="gallery.html" class="main-footer__link">Галерея</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="springs.html" class="main-footer__link">Джерела</a>
+							</li>
+							<li class="main-footer__item">
+								<div class="main-footer__link main-footer__link--unavailable" data-tippy-content="Сторінка тимчасово недоступна">Політика конфіденційності</div>
+							</li>
+							<li readonly class="main-footer__item">
+								<div class="main-footer__link main-footer__link--unavailable" data-tippy-content="Сторінка тимчасово недоступна">Умови
+									використання сайту</div>
+							</li>
+						</ul>
+					</details>
+				</div>
+
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__copy">2023 © Всі права захищено</div>
+					<div class="bottom-footer__social">
+						<a target="_blank" href="https://www.instagram.com/zamok_panorama/" class="_icon-instagram"></a>
+						<a target="_blank" href="https://www.facebook.com/zamok.panorama?locale=uk_UA" class="_icon-facebook"></a>
+						<a target="_blank" href="https://t.me/zamokPanorama" class="_icon-telegram"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-cross"></button>
+				<h2 class="popup__title">Чекаємо на ваш відгук</h2>
+				<form action="#" method="POST" class="popup__form">
+					<div class="popup__fields">
+						<input autocomplete="off" type="text" name="form[username]" placeholder="Ваше ім'я" class="popup__input input">
+						<input type="text" name="form[email]" data-required="email" data-error="Введіть коректний Email" placeholder="Ваш Email" class="popup__input input">
+						<textarea autocomplete="off" name="form[]" placeholder="Напишіть про нас" class="input popup__input popup__textarea" data-autoheight></textarea>
+					</div>
+					<div class="popup__rating rating rating_set">
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="rating">
+								<input type="radio" class="rating__item" value="2" name="rating">
+								<input type="radio" class="rating__item" value="3" name="rating">
+								<input type="radio" class="rating__item" value="4" name="rating">
+								<input type="radio" class="rating__item" value="5" name="rating">
+							</div>
+						</div>
+						<div class="rating__value">0</div>
+					</div>
+					<button type="submit" class="popup__button button">Надіслати відгук</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Стилі для body -->
+	<style>
+		.lock body {
+			overflow: hidden;
+			touch-action: none;
+			overscroll-behavior: none;
+			background: #0c6164;
+			background:
+				url("img/patern-bg.svg") center / 250px,
+				radial-gradient(70% 100%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+		}
+
+		@media (max-width: 991.98px) {
+			.lock body {
+				background: url("img/patern-bg.svg") center / 200px,
+					radial-gradient(70% 70%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+			}
+		}
+
+		@media (max-width: 767.98px) {
+			.lock body {
+				background: url("img/patern-bg.svg") center / 200px,
+					radial-gradient(90% 60%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+			}
+		}
+
+		@media (max-width: 479.98px) {
+			.lock body {
+				background: url("img/patern-bg.svg") center / 180px,
+					radial-gradient(100% 50%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+			}
+		}
+
+		.loading body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.loaded body {
+			transition: opacity 0.5s ease 0s;
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
+	<div id="fls-preloader">
+		<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+		<!-- Стилі для прелоадера -->
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				border: 0px;
+			}
+
+			*,
+			*:before,
+			*:after {
+				box-sizing: border-box;
+			}
+
+			html {
+				overflow: hidden;
+				touch-action: none;
+				overscroll-behavior: none;
+			}
+
+			/* Головний блок */
+			.fls-preloader {
+				pointer-events: none;
+				z-index: -1;
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* Блок з елементами */
+			.fls-preloader__body {
+				padding: 0.93rem;
+				max-width: 31.25rem;
+				display: flex;
+				flex-direction: column;
+			}
+
+			/* Блок з лічильником */
+			.fls-preloader__counter {
+				font-size: 10rem;
+				color: #fff;
+			}
+
+			@media (max-width: 991.98px) {
+				.fls-preloader__counter {
+					font-size: 8rem;
+				}
+			}
+
+			@media (max-width: 767.98px) {
+				.fls-preloader__counter {
+					font-size: 7rem;
+				}
+			}
+
+			@media (max-width: 479.98px) {
+				.fls-preloader__counter {
+					font-size: 6rem;
+				}
+			}
+
+			/* Прогресбар */
+			.fls-preloader__line {}
+
+			/* Лінія прогресбару */
+			.fls-preloader__line span {
+				display: inline-block;
+				transition: width 0.2s ease;
+				height: 0.8rem;
+				/* background-color: #2D4B4D; */
+				background: #00a0a3;
+				box-shadow: 0 0 30px 5px rgba(0, 147, 150, .7);
+			}
+		</style>
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.querySelector('html').insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						showPecentLoad = document.querySelector('.fls-preloader__counter'),
+						showLineLoad = document.querySelector('.fls-preloader__line span'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+						showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 150);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20231214160120"></script>
+</body>
+
+</html>
