@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231214203300">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231214214140">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -571,28 +571,43 @@
 			overflow: hidden;
 			touch-action: none;
 			overscroll-behavior: none;
-			background: #0c6164;
+			background: #2D4C4E;
 			background:
 				url("img/patern-bg.svg") center / 250px,
 				radial-gradient(70% 100%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+
+			background: url("img/patern-bg.svg") center / 250px,
+				-webkit-radial-gradient(50% 50%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
 		}
 
 		@media (max-width: 991.98px) {
 			.lock body {
 				background: url("img/patern-bg.svg") center / 200px,
 					radial-gradient(70% 70%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+
+				background: url("img/patern-bg.svg") center / 200px,
+					-webkit-radial-gradient(50% 50%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
 			}
 		}
 
 		@media (max-width: 767.98px) {
 			.lock body {
-				background: radial-gradient(90% 60%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+				background: url("img/patern-bg.svg") center / 200px,
+					radial-gradient(90% 60%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+
+				background: url("img/patern-bg.svg") center / 200px,
+					-webkit-radial-gradient(50% 50%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
 			}
 		}
 
 		@media (max-width: 479.98px) {
 			.lock body {
-				background: radial-gradient(100% 50%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+				background: #2D4C4E;
+				background: url("img/patern-bg.svg") center / 180px,
+					radial-gradient(100% 90%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
+
+				background: url("img/patern-bg.svg") center / 180px,
+					-webkit-radial-gradient(50% 50%, #2D4C4E 0%, #2D4B4D 7.75%, #385c5f 35.58%, #2D4B4D 76.91%, #2D4B4D 98.51%);
 			}
 		}
 
@@ -654,7 +669,7 @@
 			/* Блок з лічильником */
 			.fls-preloader__counter {
 				font-size: 10rem;
-				color: #ebffff;
+				color: #fff;
 			}
 
 			@media (max-width: 991.98px) {
@@ -735,7 +750,7 @@
 						const intervalId = setInterval(() => {
 							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
 							counter >= 100 ? addLoadedClass() : null;
-						}, 150);
+						}, 111150);
 					}
 
 					function addLoadedClass() {
@@ -754,7 +769,7 @@
 			preloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20231214203300"></script>
+	<script src="js/app.min.js?_v=20231214214140"></script>
 </body>
 
 </html>
