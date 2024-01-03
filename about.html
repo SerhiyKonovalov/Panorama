@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231217175617">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240103213401">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -119,6 +119,94 @@
 					</div>
 				</div>
 			</section>
+			<section class="questions">
+				<div class="questions__container">
+					<div class="questions__head" data-watch data-watch-threshold="0.2">
+						<div class="questions__faq title">FAQ</div>
+						<h2 class="questions__title title">Поширені питання </h2>
+						<div class="questions__subtitle ">
+							<span>Не можете знайти відповіді?</span>
+							<a href="tel:+380664397774">Зв’яжіться з нами</a>
+						</div>
+					</div>
+					<div class="questions__body" data-spollers data-one-spoller data-watch data-watch-threshold="0.2">
+						<details class="questions__item" data-open>
+							<summary class="questions__question" data-spoller-close>Поширене питання </summary>
+							<div class="questions__answer text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</div>
+						</details>
+						<details class="questions__item">
+							<summary class="questions__question text" data-spoller-close>Поширене питання </summary>
+							<div class="questions__answer">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</div>
+						</details>
+						<details class="questions__item">
+							<summary class="questions__question" data-spoller-close>Поширене питання Поширене питання</summary>
+							<div class="questions__answer text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo "Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</div>
+						</details>
+						<details class="questions__item">
+							<summary class="questions__question" data-spoller-close>Поширене питання Поширене питання Поширене
+								питання</summary>
+							<div class="questions__answer text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</div>
+						</details>
+						<details class="questions__item">
+							<summary class="questions__question" data-spoller-close>Поширене питання </summary>
+							<div class="questions__answer text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</div>
+						</details>
+						<details class="questions__item">
+							<summary class="questions__question" data-spoller-close>Поширене питання Поширене питання Поширене
+								питання Поширене питання Поширене </summary>
+							<div class="questions__answer text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet,
+								consectetur adipiscing elit, sed
+								do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+								nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							</div>
+						</details>
+					</div>
+				</div>
+			</section>
+			<section class="search" data-watch data-watch-threshold="0.3">
+				<div class="search__container">
+					<div class="search__subtitle">ПЕРЕВІРТЕ ЗАРАЗ</div>
+					<h2 class="search__title title">Пошук вільних номерів</h2>
+					<form data-datepicker action="#" method="POST" class="search__form">
+						<div class="search__input-wr">
+							<input type="text" name="form[]" placeholder="ЗАЇЗД" class="search__input input" readonly data-datepicker-in data-tippy-content="Оберіть дату вашого заїзду">
+						</div>
+						<div class="search__input-wr">
+							<input type="text" name="form[]" placeholder="ВИЇЗД" class="search__input input" readonly data-datepicker-out data-tippy-content="Оберіть дату вашого виїзду">
+						</div>
+						<select class="search__select" name="form[]" data-class-modif="form" data-speed="300">
+							<option value="" selected>КІЛЬКІСТЬ ОСІБ</option>
+							<option value="1">1 ОСОБА</option>
+							<option value="2">2 ОСОБИ</option>
+							<option value="3">3 ОСОБИ</option>
+							<option value="4">4 ОСОБИ</option>
+						</select>
+						<button type="submit" class="search__button">Перевірити</button>
+					</form>
+				</div>
+			</section>
 			<div class="warn" data-watch data-watch-threshold="0.3">
 				<div class="warn__container">
 					<div class="warn__item">
@@ -159,16 +247,16 @@
 								<img class="info-redirect__arrow" src="img/redirect/arrow.svg" alt="Стрілка">
 								<ul class="info-redirect__list">
 									<li class="info-redirect__item">
-										<a href="springs.html" class="info-redirect__link">Джерело №3</a>
+										<a href="springs.html#springs_3" class="info-redirect__link">Джерело №3</a>
 									</li>
 									<li class="info-redirect__item">
-										<a href="springs.html" class="info-redirect__link">Джерела №8, 9, 10</a>
+										<a href="springs.html#springs_8-9-10" class="info-redirect__link">Джерела №8, 9, 10</a>
 									</li>
 									<li class="info-redirect__item">
-										<a href="springs.html" class="info-redirect__link">Джерела №15, 357</a>
+										<a href="springs.html#springs_15-357" class="info-redirect__link">Джерела №15, 357</a>
 									</li>
 									<li class="info-redirect__item">
-										<a href="springs.html" class="info-redirect__link">Джерела №21, 21 “А”</a>
+										<a href="springs.html#springs_21" class="info-redirect__link">Джерела №21, 21 “А”</a>
 									</li>
 									<li class="info-redirect__item">
 										<a href="springs.html" class="info-redirect__link">Та інші</a>
@@ -199,69 +287,6 @@
 										<a href="gallery.html" class="info-redirect__link">Східниця</a>
 									</li>
 								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="why">
-				<div class="why__container">
-					<div class="why__title-wr" data-watch data-watch-threshold="0.3">
-						<h2 class="why__title title">Чому Вам варто <span>ОБРАТИ НАС</span>?</h2>
-					</div>
-					<div class="why__decor-wr" data-watch data-watch-once>
-						<img class="why__decor" src="img/about/decor-green.svg" alt="Decor">
-					</div>
-					<div class="why__body">
-						<ul class="why__list" data-watch data-watch-threshold="0.1">
-							<li class="why__item item-why">
-								<div class="item-why__number"><span>1</span></div>
-								<div class="item-why__content">
-									<h4 class="item-why__title">Широкий вибір номерів</h4>
-									<p class="item-why__text text">Наш широкий вибір номерів гарантує, що кожен гість знайде
-										ідеальне приміщення для відпочинку.</p>
-								</div>
-							</li>
-							<li class="why__item item-why">
-								<div class="item-why__number"><span>2</span></div>
-								<div class="item-why__content">
-									<h4 class="item-why__title">Найприємніші ціни</h4>
-									<p class="item-why__text text">Ми пропонуємо найприємніші ціни, які відповідають високій
-										якості та забезпечують ваш комфорт.</p>
-								</div>
-							</li>
-							<li class="why__item item-why">
-								<div class="item-why__number"><span>3</span></div>
-								<div class="item-why__content">
-									<h4 class="item-why__title">Панорама кімната</h4>
-									<p class="item-why__text text">Не забудьте завітати до нашої панорамної кімнати, де вас чекає
-										захоплюючий вид на ліс та краєвид
-										Східниці.</p>
-								</div>
-							</li>
-							<li class="why__item item-why">
-								<div class="item-why__number"><span>4</span></div>
-								<div class="item-why__content">
-									<h4 class="item-why__title">Розташування</h4>
-									<p class="item-why__text text">Наш готель — це місце, де мрії здійснюються. Тут ви зможете
-										насолодитися тишею і спокоєм природи, а
-										також розкішним комфортом.</p>
-								</div>
-							</li>
-							<li class="why__item item-why">
-								<div class="item-why__number"><span>5</span></div>
-								<div class="item-why__content">
-									<h4 class="item-why__title">Вигляд з вікон</h4>
-									<p class="item-why__text text">Пропонуємо вам чудову можливість відпочити від міської метушні
-										та насолодитися красою природи. З
-										кожного номеру нашого готелю відкривається чудовий вид на ліс, який знаходиться всього в
-										15 метрах.</p>
-								</div>
-							</li>
-						</ul>
-						<div class="why__image-wr" data-watch data-watch-threshold="0.1">
-							<div class="why__image">
-								<picture><source data-srcset="img/why/image-why.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/why/image-why.jpg" alt="Зображення"></picture>
 							</div>
 						</div>
 					</div>
@@ -440,9 +465,9 @@
 							<div class="reviews__scrollbar"></div>
 						</div>
 					</div>
-					<!-- <div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
+					<div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
 						<a href="#" data-popup="#popup" class="reviews__button button button--w">Залишити відгук</a>
-					</div> -->
+					</div>
 				</div>
 			</section>
 			<section class="map" data-watch data-watch-threshold="0.3">
@@ -525,7 +550,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231217175617"></script>
+	<script src="js/app.min.js?_v=20240103213401"></script>
 </body>
 
 </html>

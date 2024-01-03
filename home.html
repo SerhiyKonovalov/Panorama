@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231217175617">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240103213401">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -180,7 +180,29 @@
 					</div>
 				</div>
 			</section>
-			<div class="warn warn-gbl" data-watch data-watch-threshold="0.3">
+			<section class="search" data-watch data-watch-threshold="0.3">
+				<div class="search__container">
+					<div class="search__subtitle">ПЕРЕВІРТЕ ЗАРАЗ</div>
+					<h2 class="search__title title">Пошук вільних номерів</h2>
+					<form data-datepicker action="#" method="POST" class="search__form">
+						<div class="search__input-wr">
+							<input type="text" name="form[]" placeholder="ЗАЇЗД" class="search__input input" readonly data-datepicker-in data-tippy-content="Оберіть дату вашого заїзду">
+						</div>
+						<div class="search__input-wr">
+							<input type="text" name="form[]" placeholder="ВИЇЗД" class="search__input input" readonly data-datepicker-out data-tippy-content="Оберіть дату вашого виїзду">
+						</div>
+						<select class="search__select" name="form[]" data-class-modif="form" data-speed="300">
+							<option value="" selected>КІЛЬКІСТЬ ОСІБ</option>
+							<option value="1">1 ОСОБА</option>
+							<option value="2">2 ОСОБИ</option>
+							<option value="3">3 ОСОБИ</option>
+							<option value="4">4 ОСОБИ</option>
+						</select>
+						<button type="submit" class="search__button">Перевірити</button>
+					</form>
+				</div>
+			</section>
+			<div class="warn" data-watch data-watch-threshold="0.3">
 				<div class="warn__container">
 					<div class="warn__item">
 						<div class="warn__icon">
@@ -452,9 +474,9 @@
 							<div class="reviews__scrollbar"></div>
 						</div>
 					</div>
-					<!-- <div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
+					<div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
 						<a href="#" data-popup="#popup" class="reviews__button button button--w">Залишити відгук</a>
-					</div> -->
+					</div>
 				</div>
 			</section>
 			<section class="map" data-watch data-watch-threshold="0.3">
@@ -760,7 +782,7 @@
 			preloader();
 		</script>
 	</div>
-	<script src="js/app.min.js?_v=20231217175617"></script>
+	<script src="js/app.min.js?_v=20240103213401"></script>
 </body>
 
 </html>

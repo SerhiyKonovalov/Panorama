@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231217175617">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240103213401">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -180,9 +180,30 @@
 							</li>
 						</ul>
 					</div>
-					<div class="room__book" data-watch data-watch-once data-watch-threshold="0.3">
-						<a href="tel:+380664397774" class="book-room__button button button--book">Зв'язатись для
-							бронювання</a>
+					<div class="room__book book-room">
+						<div class="book-room__title-wr" data-watch data-watch-threshold="0.3">
+							<h2 class="book-room__title title">Бронювання</h2>
+						</div>
+						<form action="#" method="POST" class="book-room__form" data-datepicker data-watch data-watch-threshold="0.1">
+							<div class="book-room__fields">
+								<input autocomplete="off" type="text" name="form[username]" placeholder="Ваше ім'я" class="book-room__input input" data-tippy-content="Як ми можемо до Вас звертатись?">
+								<input type="text" name="form[email]" data-required="email" data-error="Введіть коректний Email" placeholder="Ваш Email" class="book-room__input input" data-tippy-content="Введіть вашу почту для зв'язку">
+								<input autocomplete="off" type="number" name="form[username]" placeholder="Номер телефону" class="book-room__input input" data-tippy-content="Введіть ваш номер для зв'язку">
+								<input type="text" name="form[]" placeholder="Дата заїзду" class="book-room__input input" readonly data-datepicker-in data-tippy-content="Оберіть дату вашого заїзду">
+								<input type="text" name="form[]" placeholder="Дата виїзду" class="book-room__input input" readonly data-datepicker-out data-tippy-content="Оберіть дату вашого виїзду">
+								<div class="book-room__quantity-wr">
+									<h5>Кількість осіб:</h5>
+									<div data-quantity class="book-room__quantity quantity" data-tippy-content="Оберіть кількість осіб (макс. 4)">
+										<button data-quantity-minus type="button" class="quantity__button quantity__button--minus"></button>
+										<div class="quantity__input">
+											<input data-quantity-value data-quantity-min="1" data-quantity-max="4" autocomplete="off" type="number" name="form[]" value="1" class="input">
+										</div>
+										<button data-quantity-plus type="button" class="quantity__button quantity__button--plus"></button>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="book-room__button button">Забронювати номер</button>
+						</form>
 					</div>
 				</div>
 			</section>
@@ -498,9 +519,9 @@
 							<div class="reviews__scrollbar"></div>
 						</div>
 					</div>
-					<!-- <div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
+					<div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
 						<a href="#" data-popup="#popup" class="reviews__button button button--w">Залишити відгук</a>
-					</div> -->
+					</div>
 				</div>
 			</section>
 			<section class="map" data-watch data-watch-threshold="0.3">
@@ -583,7 +604,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20231217175617"></script>
+	<script src="js/app.min.js?_v=20240103213401"></script>
 </body>
 
 </html>
