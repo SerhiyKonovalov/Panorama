@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240103214712">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240103215501">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -585,7 +585,36 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240103214712"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-cross"></button>
+				<h2 class="popup__title">Чекаємо на ваш відгук</h2>
+				<form action="#" method="POST" class="popup__form">
+					<div class="popup__fields">
+						<input autocomplete="off" type="text" name="form[username]" placeholder="Ваше ім'я" class="popup__input input">
+						<input type="text" name="form[email]" data-required="email" data-error="Введіть коректний Email" placeholder="Ваш Email" class="popup__input input">
+						<textarea autocomplete="off" name="form[]" placeholder="Напишіть про нас" class="input popup__input popup__textarea" data-autoheight></textarea>
+					</div>
+					<div class="popup__rating rating rating_set">
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="rating">
+								<input type="radio" class="rating__item" value="2" name="rating">
+								<input type="radio" class="rating__item" value="3" name="rating">
+								<input type="radio" class="rating__item" value="4" name="rating">
+								<input type="radio" class="rating__item" value="5" name="rating">
+							</div>
+						</div>
+						<div class="rating__value">0</div>
+					</div>
+					<button type="submit" class="popup__button button">Надіслати відгук</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240103215501"></script>
 </body>
 
 </html>
