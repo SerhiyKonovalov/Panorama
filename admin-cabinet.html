@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>Кабінет адміністратора</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240110164013">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="admin-page page">
+			<aside class="admin-sidebar">
+				<div class="admin-sidebar__logo">
+					<a href="home.html">
+						<img src="img/logo.svg" alt="Logo">
+					</a>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<div class="admin-sidebar__item">
+						<a href="admin-cabinet.html" class="admin-sidebar__link">
+							<img src="img/admin-cabinet/icons/reservations.svg" class="admin-sidebar__icon" alt="Бронювання">
+							<span class="admin-sidebar__label">Заявки на бронювання</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-history.html" class="admin-sidebar__link">
+							<img src="img/admin-cabinet/icons/history.svg" class="admin-sidebar__icon" alt="Історія">
+							<span class="admin-sidebar__label">Історія заявок</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-reviews.html" class="admin-sidebar__link">
+							<img src="img/admin-cabinet/icons/reviews.svg" class="admin-sidebar__icon" alt="Відгуки">
+							<span class="admin-sidebar__label">Відгуки</span>
+						</a>
+					</div>
+				</nav>
+				<div class="admin-sidebar__profile">
+					<img src="img/admin-cabinet/icons/person.svg" class="admin-sidebar__icon" alt="User">
+					<div class="admin-sidebar__profile-body">
+						<div class="admin-sidebar__name"><span>Name Surname</span></div>
+						<div class="admin-sidebar__email"><span>panorama.skhodnitsa@gmail.com</span></div>
+					</div>
+				</div>
+			</aside>
+			<section class="admin">
+				<h1 class="admin__title">Заявки на бронювання</h1>
+				<button type="submit" class="admin__search-pause">
+					<span>Призупинити пошук номерів</span>
+				</button>
+				<div data-spollers class="admin__spollers">
+					<details class="admin__item item-admin">
+						<summary class="item-admin__title">Заявка №1</summary>
+						<div class="item-admin__body">
+							<div class="item-admin__info">
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--01 ">Ім’я:</div>
+									<div class="item-admin__value"><span>Петро Щур</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--02">Пошта:</div>
+									<a href="mailto:petrotherat2006@gmail.com" class="item-admin__value"><span>petrotherat2006@gmail.com</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--03">Номер телефону:
+									</div>
+									<a href="tel:06798765432" class="item-admin__value"><span>06798765432</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--04">Дата заїзду:</div>
+									<div class="item-admin__value"><span>09.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--05">Дата виїзду:</div>
+									<div class="item-admin__value"><span>11.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--06">К-сть осіб:</div>
+									<div class="item-admin__value"><span>2</span></div>
+								</div>
+							</div>
+							<div class="item-admin__buttons">
+								<button type="submit" class="item-admin__confirm button--confirm">Підтвердити</button>
+								<button type="submit" class="item-admin__reject button--reject">Відхилити</button>
+							</div>
+						</div>
+					</details>
+					<details class="admin__item item-admin">
+						<summary class="item-admin__title">Заявка №2</summary>
+						<div class="item-admin__body">
+							<div class="item-admin__info">
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--01 ">Ім’я:</div>
+									<div class="item-admin__value"><span>Петро Щур</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--02">Пошта:</div>
+									<a href="mailto:petrotherat2006@gmail.com" class="item-admin__value"><span>petrotherat2006@gmail.com</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--03">Номер телефону:
+									</div>
+									<a href="tel:06798765432" class="item-admin__value"><span>06798765432</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--04">Дата заїзду:</div>
+									<div class="item-admin__value"><span>09.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--05">Дата виїзду:</div>
+									<div class="item-admin__value"><span>11.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--06">К-сть осіб:</div>
+									<div class="item-admin__value"><span>2</span></div>
+								</div>
+							</div>
+							<div class="item-admin__buttons">
+								<button type="submit" class="item-admin__confirm button--confirm">Підтвердити</button>
+								<button type="submit" class="item-admin__reject button--reject">Відхилити</button>
+							</div>
+						</div>
+					</details>
+					<details class="admin__item item-admin">
+						<summary class="item-admin__title">Заявка №3</summary>
+						<div class="item-admin__body">
+							<div class="item-admin__info">
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--01 ">Ім’я:</div>
+									<div class="item-admin__value"><span>Петро Щур</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--02">Пошта:</div>
+									<a href="mailto:petrotherat2006@gmail.com" class="item-admin__value"><span>petrotherat2006@gmail.com</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--03">Номер телефону:
+									</div>
+									<a href="tel:06798765432" class="item-admin__value"><span>06798765432</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--04">Дата заїзду:</div>
+									<div class="item-admin__value"><span>09.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--05">Дата виїзду:</div>
+									<div class="item-admin__value"><span>11.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--06">К-сть осіб:</div>
+									<div class="item-admin__value"><span>2</span></div>
+								</div>
+							</div>
+							<div class="item-admin__buttons">
+								<button type="submit" class="item-admin__confirm button--confirm">Підтвердити</button>
+								<button type="submit" class="item-admin__reject button--reject">Відхилити</button>
+							</div>
+						</div>
+					</details>
+					<details class="admin__item item-admin">
+						<summary class="item-admin__title">Заявка №4</summary>
+						<div class="item-admin__body">
+							<div class="item-admin__info">
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--01 ">Ім’я:</div>
+									<div class="item-admin__value"><span>Петро Щур</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--02">Пошта:</div>
+									<a href="mailto:petrotherat2006@gmail.com" class="item-admin__value"><span>petrotherat2006@gmail.com</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--03">Номер телефону:
+									</div>
+									<a href="tel:06798765432" class="item-admin__value"><span>06798765432</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--04">Дата заїзду:</div>
+									<div class="item-admin__value"><span>09.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--05">Дата виїзду:</div>
+									<div class="item-admin__value"><span>11.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--06">К-сть осіб:</div>
+									<div class="item-admin__value"><span>2</span></div>
+								</div>
+							</div>
+							<div class="item-admin__buttons">
+								<button type="submit" class="item-admin__confirm button--confirm">Підтвердити</button>
+								<button type="submit" class="item-admin__reject button--reject">Відхилити</button>
+							</div>
+						</div>
+					</details>
+					<details class="admin__item item-admin">
+						<summary class="item-admin__title">Заявка №5</summary>
+						<div class="item-admin__body">
+							<div class="item-admin__info">
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--01 ">Ім’я:</div>
+									<div class="item-admin__value"><span>Петро Щур</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--02">Пошта:</div>
+									<a href="mailto:petrotherat2006@gmail.com" class="item-admin__value"><span>petrotherat2006@gmail.com</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--03">Номер телефону:
+									</div>
+									<a href="tel:06798765432" class="item-admin__value"><span>06798765432</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--04">Дата заїзду:</div>
+									<div class="item-admin__value"><span>09.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--05">Дата виїзду:</div>
+									<div class="item-admin__value"><span>11.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--06">К-сть осіб:</div>
+									<div class="item-admin__value"><span>2</span></div>
+								</div>
+							</div>
+							<div class="item-admin__buttons">
+								<button type="submit" class="item-admin__confirm button--confirm">Підтвердити</button>
+								<button type="submit" class="item-admin__reject button--reject">Відхилити</button>
+							</div>
+						</div>
+					</details>
+					<details class="admin__item item-admin">
+						<summary class="item-admin__title">Заявка №5</summary>
+						<div class="item-admin__body">
+							<div class="item-admin__info">
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--01 ">Ім’я:</div>
+									<div class="item-admin__value"><span>Петро Щур</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--02">Пошта:</div>
+									<a href="mailto:petrotherat2006@gmail.com" class="item-admin__value"><span>petrotherat2006@gmail.com</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--03">Номер телефону:
+									</div>
+									<a href="tel:06798765432" class="item-admin__value"><span>06798765432</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--04">Дата заїзду:</div>
+									<div class="item-admin__value"><span>09.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--05">Дата виїзду:</div>
+									<div class="item-admin__value"><span>11.01.2024</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--06">К-сть осіб:</div>
+									<div class="item-admin__value"><span>2</span></div>
+								</div>
+							</div>
+							<div class="item-admin__buttons">
+								<button type="submit" class="item-admin__confirm button--confirm">Підтвердити</button>
+								<button type="submit" class="item-admin__reject button--reject">Відхилити</button>
+							</div>
+						</div>
+					</details>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20240110164013"></script>
+</body>
+
+</html>
