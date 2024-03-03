@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="uk">
-@@include('html/_head.htm',{
-"title":"Галерея"
-})
+
+<head>
+	<title>Галерея</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240303223038">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <meta name="description" content=""> -->
+	<!-- <meta name="keywords" content=""> -->
+
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header data-scroll data-scroll-show="500" class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a href="rooms.html" class="menu__link">Номери</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Послуги</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__info">
+					<a href="tel:+380664397774" class="header__tel" data-da=".menu__body,570">+38 (066) 439-77-74</a>
+					<a href="rooms.html" class="header__button" data-goto=".search" data-goto-header data-da=".menu__body,400">Знайти вільний номер</a>
+				</div>
+			</div>
+		</header>
 		<main class="page">
 			<section class="hero">
 				<div class="hero__body">
 					<div class="hero__logo">
-						<img src="@img/logo.svg" alt="Логопит">
+						<img src="img/logo.svg" alt="Логопит">
 					</div>
 					<h1 class="hero__title hero__title--small">Галерея</h1>
 				</div>
 				<div class="hero__bgimage">
-					<img src="@img/gallerypage/bg.jpg" alt="Фон">
+					<picture><source srcset="img/gallerypage/bg.webp" type="image/webp"><img src="img/gallerypage/bg.jpg" alt="Фон"></picture>
 				</div>
 				<button type="button" class="scroll-down" data-goto=".gallery" data-goto-header></button>
 			</section>
@@ -28,157 +67,137 @@
 					<div class="gallery__filter filter-gallery" data-watch data-watch-threshold="0.3">
 						<button data-filter="*" class="filter-gallery__item filter-gallery__item--1 active" type="button">
 							Усі фотографії</button>
-						<button data-filter="hotel" class="filter-gallery__item filter-gallery__item--2"
-							type="button">Готель</button>
-						<button data-filter="rooms" class="filter-gallery__item filter-gallery__item--3"
-							type="button">Номери</button>
-						<button data-filter="panorama-room" class="filter-gallery__item filter-gallery__item--4"
-							type="button">Панорамна кімната</button>
-						<button data-filter="Skhidnytsia" class="filter-gallery__item filter-gallery__item--5"
-							type="button">Східниця</button>
+						<button data-filter="hotel" class="filter-gallery__item filter-gallery__item--2" type="button">Готель</button>
+						<button data-filter="rooms" class="filter-gallery__item filter-gallery__item--3" type="button">Номери</button>
+						<button data-filter="panorama-room" class="filter-gallery__item filter-gallery__item--4" type="button">Панорамна кімната</button>
+						<button data-filter="Skhidnytsia" class="filter-gallery__item filter-gallery__item--5" type="button">Східниця</button>
 					</div>
 					<div data-iso-items class="gallery__items" data-watch data-watch-threshold="0.05">
 						<div data-iso-item data-filter="Skhidnytsia" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/01.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/01.jpg" alt="Я ❤️ Східницю" class="item-gallery__preview">
+							<a href="img/gallerypage/full/01.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/01.webp" type="image/webp"><img src="img/gallerypage/preview/01.jpg" alt="Я ❤️ Східницю" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="rooms" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/02.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/02.jpg" alt="Один із наших номерів"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/02.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/02.webp" type="image/webp"><img src="img/gallerypage/preview/02.jpg" alt="Один із наших номерів" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="panorama-room" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/03.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/03.jpg" alt="Вигляд з панорамної кімнати"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/03.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/03.webp" type="image/webp"><img src="img/gallerypage/preview/03.jpg" alt="Вигляд з панорамної кімнати" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="hotel" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/04.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/04.jpg" alt="Ресепшн" class="item-gallery__preview">
+							<a href="img/gallerypage/full/04.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/04.webp" type="image/webp"><img src="img/gallerypage/preview/04.jpg" alt="Ресепшн" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="Skhidnytsia" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/05.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/05.jpg" alt="Фото Амфітеатру" class="item-gallery__preview">
+							<a href="img/gallerypage/full/05.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/05.webp" type="image/webp"><img src="img/gallerypage/preview/05.jpg" alt="Фото Амфітеатру" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="rooms" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/06.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/06.jpg" alt="Апартаменти з панорамним виглядом"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/06.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/06.webp" type="image/webp"><img src="img/gallerypage/preview/06.jpg" alt="Апартаменти з панорамним виглядом" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="Skhidnytsia" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/07.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/07.jpg" alt="Майданчик у парку"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/07.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/07.webp" type="image/webp"><img src="img/gallerypage/preview/07.jpg" alt="Майданчик у парку" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="hotel" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/08.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/08.jpg" alt="Фото готелю" class="item-gallery__preview">
+							<a href="img/gallerypage/full/08.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/08.webp" type="image/webp"><img src="img/gallerypage/preview/08.jpg" alt="Фото готелю" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="rooms" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/09.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/09.jpg" alt="Номер преміум" class="item-gallery__preview">
+							<a href="img/gallerypage/full/09.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/09.webp" type="image/webp"><img src="img/gallerypage/preview/09.jpg" alt="Номер преміум" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="rooms" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/10.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/10.jpg" alt="Вигляд з номеру на ліс"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/10.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/10.webp" type="image/webp"><img src="img/gallerypage/preview/10.jpg" alt="Вигляд з номеру на ліс" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="Skhidnytsia" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/11.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/11.jpg" alt="Фото Амфітеатру" class="item-gallery__preview">
+							<a href="img/gallerypage/full/11.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/11.webp" type="image/webp"><img src="img/gallerypage/preview/11.jpg" alt="Фото Амфітеатру" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="hotel" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/12.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/12.jpg" alt="Рецепшин" class="item-gallery__preview">
+							<a href="img/gallerypage/full/12.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/12.webp" type="image/webp"><img src="img/gallerypage/preview/12.jpg" alt="Рецепшин" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="rooms" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/13.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/13.jpg" alt="Один із наших номерів"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/13.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/13.webp" type="image/webp"><img src="img/gallerypage/preview/13.jpg" alt="Один із наших номерів" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="panorama-room" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/14.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/14.jpg" alt="Вигляд з панорамної кімнати на ліс"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/14.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/14.webp" type="image/webp"><img src="img/gallerypage/preview/14.jpg" alt="Вигляд з панорамної кімнати на ліс" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="panorama-room" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/15.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/15.jpg" alt="Панорамний вигляд з готелю"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/15.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/15.webp" type="image/webp"><img src="img/gallerypage/preview/15.jpg" alt="Панорамний вигляд з готелю" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="Skhidnytsia" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/16.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/16.jpg" alt="Капличка Пантелеймона Цілителя"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/16.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/16.webp" type="image/webp"><img src="img/gallerypage/preview/16.jpg" alt="Капличка Пантелеймона Цілителя" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="hotel" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/17.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/17.jpg" alt="Фото готелю" class="item-gallery__preview">
+							<a href="img/gallerypage/full/17.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/17.webp" type="image/webp"><img src="img/gallerypage/preview/17.jpg" alt="Фото готелю" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="rooms" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/18.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/18.jpg" alt="Один із наших номерів"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/18.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/18.webp" type="image/webp"><img src="img/gallerypage/preview/18.jpg" alt="Один із наших номерів" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="hotel" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/19.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/19.jpg" alt="Ресепшн" class="item-gallery__preview">
+							<a href="img/gallerypage/full/19.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/19.webp" type="image/webp"><img src="img/gallerypage/preview/19.jpg" alt="Ресепшн" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="rooms" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/20.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/20.jpg" alt="Один із наших номерів"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/20.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/20.webp" type="image/webp"><img src="img/gallerypage/preview/20.jpg" alt="Один із наших номерів" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="Skhidnytsia" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/21.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/21.jpg" alt="Місце в парку Східниці"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/21.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/21.webp" type="image/webp"><img src="img/gallerypage/preview/21.jpg" alt="Місце в парку Східниці" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="panorama-room" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/22.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/22.jpg" alt="Панорамний вигляд з готелю"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/22.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/22.webp" type="image/webp"><img src="img/gallerypage/preview/22.jpg" alt="Панорамний вигляд з готелю" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="panorama-room" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/23.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/23.jpg" alt="Вигляд з готелю на ліс"
-									class="item-gallery__preview">
+							<a href="img/gallerypage/full/23.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/23.webp" type="image/webp"><img src="img/gallerypage/preview/23.jpg" alt="Вигляд з готелю на ліс" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 						<div data-iso-item data-filter="hotel" data-gallery class="gallery__item item-gallery">
-							<a href="@img/gallerypage/full/24.jpg" class="item-gallery__image">
-								<img src="@img/gallerypage/preview/24.jpg" alt="Фото готелю" class="item-gallery__preview">
+							<a href="img/gallerypage/full/24.jpg" class="item-gallery__image">
+								<picture><source srcset="img/gallerypage/preview/24.webp" type="image/webp"><img src="img/gallerypage/preview/24.jpg" alt="Фото готелю" class="item-gallery__preview"></picture>
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="map" data-watch data-watch-threshold="0.3">
-				<iframe class="map__iframe"
-					data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.759335167075!2d23.339518603136653!3d49.22409110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3526b2543f3d%3A0x78020374a5928970!2z0JfQsNC80L7QuiDQn9Cw0L3QvtGA0LDQvNCw!5e0!3m2!1suk!2sua!4v1700473289318!5m2!1suk!2sua"
-					style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe class="map__iframe" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.759335167075!2d23.339518603136653!3d49.22409110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3526b2543f3d%3A0x78020374a5928970!2z0JfQsNC80L7QuiDQn9Cw0L3QvtGA0LDQvNCw!5e0!3m2!1suk!2sua!4v1700473289318!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<div class="map__contacts contacts-map">
 					<h2 class="contacts-map__title">Контакти</h2>
 					<div class="contacts-map__body">
@@ -199,9 +218,66 @@
 				</div>
 			</section>
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer" data-watch data-watch-threshold="0.3">
+			<div class="footer__container">
+				<div class="footer__main main-footer" data-spollers="479.98,max">
+					<details class="main-footer__block main-footer__block--1">
+						<summary class="main-footer__title">Навігація</summary>
+						<ul class="main-footer__list">
+							<li class="main-footer__item">
+								<a href="home.html" class="main-footer__link">Головна</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="rooms.html" class="main-footer__link">Номери</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="services.html" class="main-footer__link">Послуги</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="about.html" class="main-footer__link">Про нас</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="contacts.html" class="main-footer__link">Контакти</a>
+							</li>
+						</ul>
+					</details>
+					<div class="main-footer__block main-footer__block--2" data-da=".footer__container,991.98,1">
+						<h4 class="main-footer__title">Співпраця з нами</h4>
+						<p class="main-footer__text text">Ми готові обговорити ваші ідеї та спільні можливості!</p>
+						<a target="_blank" href="mailto:panorama.skhodnitsa@gmail.com" class="main-footer__button">Зв’язатись</a>
+					</div>
+					<details class="main-footer__block main-footer__block--3">
+						<summary class="main-footer__title">Корисне</summary>
+						<ul class="main-footer__list">
+							<li class="main-footer__item">
+								<a href="gallery.html" class="main-footer__link">Галерея</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="springs.html" class="main-footer__link">Джерела</a>
+							</li>
+							<li class="main-footer__item">
+								<div class="main-footer__link main-footer__link--unavailable" data-tippy-content="Сторінка тимчасово недоступна">Політика конфіденційності</div>
+							</li>
+							<li class="main-footer__item">
+								<div class="main-footer__link main-footer__link--unavailable" data-tippy-content="Сторінка тимчасово недоступна">Умови
+									використання сайту</div>
+							</li>
+						</ul>
+					</details>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__copy">2024 © Всі права захищено</div>
+					<div class="bottom-footer__social">
+						<a target="_blank" href="https://www.instagram.com/zamok_panorama/" class="_icon-instagram"></a>
+						<a target="_blank" href="https://www.tiktok.com/@zamok_panorama" class="_icon-tiktok"></a>
+						<a target="_blank" href="https://www.facebook.com/zamok.panorama?locale=uk_UA" class="_icon-facebook"></a>
+						<a target="_blank" href="https://t.me/zamokPanorama" class="_icon-telegram"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	@@include('html/_js.htm',{})
+	<script src="js/app.min.js?_v=20240303223038"></script>
 </body>
 
 </html>

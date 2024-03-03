@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html lang="uk">
-@@include('html/_head.htm',{
-"title":"Редагування номеру"
-})
+
+<head>
+	<title>Редагування номеру</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240303223038">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <meta name="description" content=""> -->
+	<!-- <meta name="keywords" content=""> -->
+
+</head>
 
 <body>
 	<div class="wrapper">
@@ -10,37 +27,37 @@
 			<aside class="admin-sidebar">
 				<div class="admin-sidebar__logo">
 					<a href="home.html">
-						<img src="@img/logo.svg" alt="Logo">
+						<img src="img/logo.svg" alt="Logo">
 					</a>
 				</div>
 				<nav class="admin-sidebar__menu">
 					<div class="admin-sidebar__item">
 						<a href="admin-applications.html" class="admin-sidebar__link">
-							<img src="@img/admin-cabinet/icons/reservations.svg" class="admin-sidebar__icon" alt="Бронювання">
+							<img src="img/admin-cabinet/icons/reservations.svg" class="admin-sidebar__icon" alt="Бронювання">
 							<span class="admin-sidebar__label">Заявки на бронювання</span>
 						</a>
 					</div>
 					<div class="admin-sidebar__item">
 						<a href="admin-history.html" class="admin-sidebar__link">
-							<img src="@img/admin-cabinet/icons/history.svg" class="admin-sidebar__icon" alt="Історія">
+							<img src="img/admin-cabinet/icons/history.svg" class="admin-sidebar__icon" alt="Історія">
 							<span class="admin-sidebar__label">Історія заявок</span>
 						</a>
 					</div>
 					<div class="admin-sidebar__item">
 						<a href="admin-reviews.html" class="admin-sidebar__link">
-							<img src="@img/admin-cabinet/icons/reviews.svg" class="admin-sidebar__icon" alt="Відгуки">
+							<img src="img/admin-cabinet/icons/reviews.svg" class="admin-sidebar__icon" alt="Відгуки">
 							<span class="admin-sidebar__label">Відгуки</span>
 						</a>
 					</div>
 					<div class="admin-sidebar__item">
 						<a href="admin-edit.html" class="admin-sidebar__link">
-							<img src="@img/admin-cabinet/icons/edit.svg" class="admin-sidebar__icon" alt="Редагування">
+							<img src="img/admin-cabinet/icons/edit.svg" class="admin-sidebar__icon" alt="Редагування">
 							<span class="admin-sidebar__label">Редагування</span>
 						</a>
 					</div>
 				</nav>
 				<div class="admin-sidebar__profile">
-					<img src="@img/admin-cabinet/icons/person.svg" class="admin-sidebar__icon" alt="User">
+					<img src="img/admin-cabinet/icons/person.svg" class="admin-sidebar__icon" alt="User">
 					<div class="admin-sidebar__profile-body">
 						<div class="admin-sidebar__name"><span>Name Surname</span></div>
 						<div class="admin-sidebar__email"><span>panorama.skhodnitsa@gmail.com</span></div>
@@ -72,7 +89,7 @@
 			</section>
 		</main>
 	</div>
-	@@include('html/_js.htm',{})
+	<script src="js/app.min.js?_v=20240303223038"></script>
 </body>
 
 </html>

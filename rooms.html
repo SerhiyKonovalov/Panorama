@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="uk">
-@@include('html/_head.htm',{
-"title":"Номери"
-})
+
+<head>
+	<title>Номери</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240303223038">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- <meta name="description" content=""> -->
+	<!-- <meta name="keywords" content=""> -->
+
+</head>
 
 <body>
 	<div class="wrapper">
-		@@include('html/_header.htm',{})
+		<header data-scroll data-scroll-show="500" class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="home.html" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a href="rooms.html" class="menu__link">Номери</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Послуги</a></li>
+							<li class="menu__item"><a href="about.html" class="menu__link">Про нас</a></li>
+							<li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__info">
+					<a href="tel:+380664397774" class="header__tel" data-da=".menu__body,570">+38 (066) 439-77-74</a>
+					<a href="rooms.html" class="header__button" data-goto=".search" data-goto-header data-da=".menu__body,400">Знайти вільний номер</a>
+				</div>
+			</div>
+		</header>
 		<main class="page">
 			<section class="hero">
 				<div class="hero__body">
 					<div class="hero__logo">
-						<img src="@img/logo.svg" alt="Логопит">
+						<img src="img/logo.svg" alt="Логопит">
 					</div>
 					<h1 class="hero__title">НАШІ НОМЕРИ</h1>
 				</div>
 				<div class="hero__bgimage hero__bgimage--rooms">
-					<img data-src="@img/roomspage/bg.jpg" alt="Фон">
+					<picture><source data-srcset="img/roomspage/bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/bg.jpg" alt="Фон"></picture>
 				</div>
 				<button type="button" class="scroll-down" data-goto=".roomspage-info" data-goto-header></button>
 			</section>
@@ -40,7 +79,7 @@
 					</div>
 				</div>
 				<div class="roomspage-info__decor-wr">
-					<img class="roomspage-info__decor" src="@img/roomspage/decor-green.svg" alt="Декор">
+					<img class="roomspage-info__decor" src="img/roomspage/decor-green.svg" alt="Декор">
 				</div>
 			</section>
 			<section class="roomspage">
@@ -49,20 +88,18 @@
 						<div class="item-roomspage__slider swiper" data-watch data-watch-threshold="0.2">
 							<div class="item-roomspage__wrapper swiper-wrapper">
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/junior-suite/01.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/junior-suite/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/junior-suite/01.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/junior-suite/02.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/junior-suite/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/junior-suite/02.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/junior-suite/03.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/junior-suite/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/junior-suite/03.jpg" alt="Фото номеру"></picture>
 								</div>
 							</div>
 							<div class="item-roomspage__arrows">
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
 							</div>
 							<div class="item-roomspage__bullets"></div>
 						</div>
@@ -80,27 +117,26 @@
 							<div class="content-item-roomspage__items">
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/tv.svg" alt="Іконка телевізору">
+										<img src="img/roomspage/icons/tv.svg" alt="Іконка телевізору">
 									</div>
 									<div class="content-item-roomspage__label">телевізор</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/sofa.svg" alt="Іконка дивану">
+										<img src="img/roomspage/icons/sofa.svg" alt="Іконка дивану">
 									</div>
 									<div class="content-item-roomspage__label">розкладний диван</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/area.svg" alt="Іконка площі">
+										<img src="img/roomspage/icons/area.svg" alt="Іконка площі">
 									</div>
 									<div class="content-item-roomspage__label">20м<sup>2</sup></div>
 								</div>
 							</div>
 							<div class="content-item-roomspage__info">
 								<a href="junior-suite.html" class="content-item-roomspage__price"></a>
-								<a href="junior-suite.html"
-									class="content-item-roomspage__button button button--w">Детальніше</a>
+								<a href="junior-suite.html" class="content-item-roomspage__button button button--w">Детальніше</a>
 							</div>
 						</div>
 					</div>
@@ -108,20 +144,18 @@
 						<div class="item-roomspage__slider swiper" data-watch data-watch-threshold="0.2">
 							<div class="item-roomspage__wrapper swiper-wrapper">
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/oneroom-suite/01.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/oneroom-suite/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/oneroom-suite/01.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/oneroom-suite/02.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/oneroom-suite/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/oneroom-suite/02.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/oneroom-suite/03.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/oneroom-suite/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/oneroom-suite/03.jpg" alt="Фото номеру"></picture>
 								</div>
 							</div>
 							<div class="item-roomspage__arrows">
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
 							</div>
 							<div class="item-roomspage__bullets"></div>
 						</div>
@@ -140,27 +174,26 @@
 							<div class="content-item-roomspage__items">
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/tv.svg" alt="Іконка телевізору">
+										<img src="img/roomspage/icons/tv.svg" alt="Іконка телевізору">
 									</div>
 									<div class="content-item-roomspage__label">телевізор</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/bed.svg" alt="Іконка ліжка">
+										<img src="img/roomspage/icons/bed.svg" alt="Іконка ліжка">
 									</div>
 									<div class="content-item-roomspage__label">двоспальне ліжко</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/area.svg" alt="Іконка площі">
+										<img src="img/roomspage/icons/area.svg" alt="Іконка площі">
 									</div>
 									<div class="content-item-roomspage__label">30м<sup>2</sup></div>
 								</div>
 							</div>
 							<div class="content-item-roomspage__info">
 								<a href="oneroom-suite.html" class="content-item-roomspage__price"></a>
-								<a href="oneroom-suite.html"
-									class="content-item-roomspage__button button button--w">Детальніше</a>
+								<a href="oneroom-suite.html" class="content-item-roomspage__button button button--w">Детальніше</a>
 							</div>
 						</div>
 					</div>
@@ -168,20 +201,18 @@
 						<div class="item-roomspage__slider swiper" data-watch data-watch-threshold="0.2">
 							<div class="item-roomspage__wrapper swiper-wrapper">
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/apartments/01.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/apartments/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/apartments/01.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/apartments/02.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/apartments/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/apartments/02.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/apartments/03.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/apartments/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/apartments/03.jpg" alt="Фото номеру"></picture>
 								</div>
 							</div>
 							<div class="item-roomspage__arrows">
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
 							</div>
 							<div class="item-roomspage__bullets"></div>
 						</div>
@@ -197,19 +228,19 @@
 							<div class="content-item-roomspage__items">
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/tv.svg" alt="Іконка телевізору">
+										<img src="img/roomspage/icons/tv.svg" alt="Іконка телевізору">
 									</div>
 									<div class="content-item-roomspage__label">телевізор</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/bed.svg" alt="Іконка дивану">
+										<img src="img/roomspage/icons/bed.svg" alt="Іконка дивану">
 									</div>
 									<div class="content-item-roomspage__label">двоспальне ліжко</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/area.svg" alt="Іконка площі">
+										<img src="img/roomspage/icons/area.svg" alt="Іконка площі">
 									</div>
 									<div class="content-item-roomspage__label">45м<sup>2</sup></div>
 								</div>
@@ -224,27 +255,24 @@
 						<div class="item-roomspage__slider swiper" data-watch data-watch-threshold="0.2">
 							<div class="item-roomspage__wrapper swiper-wrapper">
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/apartments-kitchen/01.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/apartments-kitchen/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/apartments-kitchen/01.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/apartments-kitchen/02.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/apartments-kitchen/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/apartments-kitchen/02.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/apartments-kitchen/03.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/apartments-kitchen/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/apartments-kitchen/03.jpg" alt="Фото номеру"></picture>
 								</div>
 							</div>
 							<div class="item-roomspage__arrows">
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
 							</div>
 							<div class="item-roomspage__bullets"></div>
 						</div>
 						<div class="item-roomspage__content content-item-roomspage" data-watch data-watch-threshold="0.2">
 							<div class="content-item-roomspage__title-wr">
-								<a href="apartments-kitchen.html"
-									class="content-item-roomspage__title title title--w">Апартаменти з кухнею</a>
+								<a href="apartments-kitchen.html" class="content-item-roomspage__title title title--w">Апартаменти з кухнею</a>
 							</div>
 							<div class="content-item-roomspage__text">
 								<p>Наш двокімнатний номер з кухнею та видом на ліс — це ідеальне місце для романтичного
@@ -254,33 +282,32 @@
 							<div class="content-item-roomspage__items">
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/tv.svg" alt="Іконка телевізору">
+										<img src="img/roomspage/icons/tv.svg" alt="Іконка телевізору">
 									</div>
 									<div class="content-item-roomspage__label">телевізор</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/bed.svg" alt="Іконка дивану">
+										<img src="img/roomspage/icons/bed.svg" alt="Іконка дивану">
 									</div>
 									<div class="content-item-roomspage__label">двоспальне ліжко</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/area.svg" alt="Іконка площі">
+										<img src="img/roomspage/icons/area.svg" alt="Іконка площі">
 									</div>
 									<div class="content-item-roomspage__label">45м<sup>2</sup></div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/kitchen.svg" alt="Іконка міні-кухні">
+										<img src="img/roomspage/icons/kitchen.svg" alt="Іконка міні-кухні">
 									</div>
 									<div class="content-item-roomspage__label">міні-кухня</div>
 								</div>
 							</div>
 							<div class="content-item-roomspage__info">
 								<a href="apartments-kitchen.html" class="content-item-roomspage__price"></a>
-								<a href="apartments-kitchen.html"
-									class="content-item-roomspage__button button button--w">Детальніше</a>
+								<a href="apartments-kitchen.html" class="content-item-roomspage__button button button--w">Детальніше</a>
 							</div>
 						</div>
 					</div>
@@ -288,20 +315,18 @@
 						<div class="item-roomspage__slider swiper" data-watch data-watch-threshold="0.2">
 							<div class="item-roomspage__wrapper swiper-wrapper">
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/premium-apartments/01.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/premium-apartments/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/premium-apartments/01.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/premium-apartments/02.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/premium-apartments/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/premium-apartments/02.jpg" alt="Фото номеру"></picture>
 								</div>
 								<div class="item-roomspage__slide swiper-slide">
-									<img data-src="@img/roomspage/premium-apartments/03.jpg" alt="Фото номеру">
+									<picture><source data-srcset="img/roomspage/premium-apartments/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/roomspage/premium-apartments/03.jpg" alt="Фото номеру"></picture>
 								</div>
 							</div>
 							<div class="item-roomspage__arrows">
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
-								<button type="button"
-									class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--left _icon-arrow-2"></button>
+								<button type="button" class="item-roomspage__arrow item-roomspage__arrow--right _icon-arrow-2"></button>
 							</div>
 							<div class="item-roomspage__bullets"></div>
 						</div>
@@ -318,33 +343,32 @@
 							<div class="content-item-roomspage__items">
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/tv.svg" alt="Іконка телевізору">
+										<img src="img/roomspage/icons/tv.svg" alt="Іконка телевізору">
 									</div>
 									<div class="content-item-roomspage__label">телевізор</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/bed.svg" alt="Іконка дивану">
+										<img src="img/roomspage/icons/bed.svg" alt="Іконка дивану">
 									</div>
 									<div class="content-item-roomspage__label">двоспальне ліжко</div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/area.svg" alt="Іконка площі">
+										<img src="img/roomspage/icons/area.svg" alt="Іконка площі">
 									</div>
 									<div class="content-item-roomspage__label">50м<sup>2</sup></div>
 								</div>
 								<div class="content-item-roomspage__item">
 									<div class="content-item-roomspage__icon">
-										<img src="@img/roomspage/icons/kitchen.svg" alt="Іконка міні-кухні">
+										<img src="img/roomspage/icons/kitchen.svg" alt="Іконка міні-кухні">
 									</div>
 									<div class="content-item-roomspage__label">міні-кухня</div>
 								</div>
 							</div>
 							<div class="content-item-roomspage__info">
 								<a href="premium-apartments.html" class="content-item-roomspage__price"></a>
-								<a href="premium-apartments.html"
-									class="content-item-roomspage__button button button--w">Детальніше</a>
+								<a href="premium-apartments.html" class="content-item-roomspage__button button button--w">Детальніше</a>
 							</div>
 						</div>
 					</div>
@@ -356,14 +380,10 @@
 					<h2 class="search__title title">Пошук вільних номерів</h2>
 					<form data-datepicker action="#" method="POST" class="search__form">
 						<div class="search__input-wr">
-							<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="date-in" autocomplete="off"
-								placeholder="ЗАЇЗД" class="search__input input" data-datepicker-in
-								data-tippy-content="Оберіть дату вашого заїзду">
+							<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="date-in" autocomplete="off" placeholder="ЗАЇЗД" class="search__input input" data-datepicker-in data-tippy-content="Оберіть дату вашого заїзду">
 						</div>
 						<div class="search__input-wr">
-							<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="date-out" autocomplete="off"
-								placeholder="ВИЇЗД" class="search__input input" data-datepicker-out
-								data-tippy-content="Оберіть дату вашого виїзду">
+							<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="date-out" autocomplete="off" placeholder="ВИЇЗД" class="search__input input" data-datepicker-out data-tippy-content="Оберіть дату вашого виїзду">
 						</div>
 						<select class="search__select" name="persons" data-class-modif="form" data-speed="300">
 							<option value="1" selected>1 ОСОБА</option>
@@ -379,25 +399,25 @@
 				<div class="warn__container">
 					<div class="warn__item">
 						<div class="warn__icon">
-							<img src="@img/warn/calendar.svg" alt="Іконка календаря">
+							<img src="img/warn/calendar.svg" alt="Іконка календаря">
 						</div>
 						<div class="warn__text">Мінімальний період проживання — 3 доби</div>
 					</div>
 					<div class="warn__item">
 						<div class="warn__icon">
-							<img src="@img/warn/handshake.svg" alt="Іконка">
+							<img src="img/warn/handshake.svg" alt="Іконка">
 						</div>
 						<div class="warn__text">Передплата — 30%</div>
 					</div>
 					<div class="warn__item">
 						<div class="warn__icon">
-							<img src="@img/warn/discount.svg" alt="Іконка Знижки">
+							<img src="img/warn/discount.svg" alt="Іконка Знижки">
 						</div>
 						<div class="warn__text">Знижка на проживання від 5 діб -15%</div>
 					</div>
 					<div class="warn__item">
 						<div class="warn__icon">
-							<img src="@img/warn/person.svg" alt="Іконка людина">
+							<img src="img/warn/person.svg" alt="Іконка людина">
 						</div>
 						<div class="warn__text">Додаткове місце — 200&nbsp;грн</div>
 					</div>
@@ -422,9 +442,7 @@
 				</div>
 			</section>
 			<section class="map" data-watch data-watch-threshold="0.3">
-				<iframe class="map__iframe"
-					data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.759335167075!2d23.339518603136653!3d49.22409110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3526b2543f3d%3A0x78020374a5928970!2z0JfQsNC80L7QuiDQn9Cw0L3QvtGA0LDQvNCw!5e0!3m2!1suk!2sua!4v1700473289318!5m2!1suk!2sua"
-					style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<iframe class="map__iframe" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.759335167075!2d23.339518603136653!3d49.22409110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3526b2543f3d%3A0x78020374a5928970!2z0JfQsNC80L7QuiDQn9Cw0L3QvtGA0LDQvNCw!5e0!3m2!1suk!2sua!4v1700473289318!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<div class="map__contacts contacts-map">
 					<h2 class="contacts-map__title">Контакти</h2>
 					<div class="contacts-map__body">
@@ -446,13 +464,100 @@
 			</section>
 			<div class="alert alert--review">
 				<span>Дякуємо за ваш відгук!</span>
-				<img src="@img/icons/green-check.svg" alt="Галочка">
+				<img src="img/icons/green-check.svg" alt="Галочка">
 			</div>
 		</main>
-		@@include('html/_footer.htm',{})
+		<footer class="footer" data-watch data-watch-threshold="0.3">
+			<div class="footer__container">
+				<div class="footer__main main-footer" data-spollers="479.98,max">
+					<details class="main-footer__block main-footer__block--1">
+						<summary class="main-footer__title">Навігація</summary>
+						<ul class="main-footer__list">
+							<li class="main-footer__item">
+								<a href="home.html" class="main-footer__link">Головна</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="rooms.html" class="main-footer__link">Номери</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="services.html" class="main-footer__link">Послуги</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="about.html" class="main-footer__link">Про нас</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="contacts.html" class="main-footer__link">Контакти</a>
+							</li>
+						</ul>
+					</details>
+					<div class="main-footer__block main-footer__block--2" data-da=".footer__container,991.98,1">
+						<h4 class="main-footer__title">Співпраця з нами</h4>
+						<p class="main-footer__text text">Ми готові обговорити ваші ідеї та спільні можливості!</p>
+						<a target="_blank" href="mailto:panorama.skhodnitsa@gmail.com" class="main-footer__button">Зв’язатись</a>
+					</div>
+					<details class="main-footer__block main-footer__block--3">
+						<summary class="main-footer__title">Корисне</summary>
+						<ul class="main-footer__list">
+							<li class="main-footer__item">
+								<a href="gallery.html" class="main-footer__link">Галерея</a>
+							</li>
+							<li class="main-footer__item">
+								<a href="springs.html" class="main-footer__link">Джерела</a>
+							</li>
+							<li class="main-footer__item">
+								<div class="main-footer__link main-footer__link--unavailable" data-tippy-content="Сторінка тимчасово недоступна">Політика конфіденційності</div>
+							</li>
+							<li class="main-footer__item">
+								<div class="main-footer__link main-footer__link--unavailable" data-tippy-content="Сторінка тимчасово недоступна">Умови
+									використання сайту</div>
+							</li>
+						</ul>
+					</details>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__copy">2024 © Всі права захищено</div>
+					<div class="bottom-footer__social">
+						<a target="_blank" href="https://www.instagram.com/zamok_panorama/" class="_icon-instagram"></a>
+						<a target="_blank" href="https://www.tiktok.com/@zamok_panorama" class="_icon-tiktok"></a>
+						<a target="_blank" href="https://www.facebook.com/zamok.panorama?locale=uk_UA" class="_icon-facebook"></a>
+						<a target="_blank" href="https://t.me/zamokPanorama" class="_icon-telegram"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-	@@include('html/_popup.htm',{})
-	@@include('html/_js.htm',{})
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-cross"></button>
+				<h2 class="popup__title">Чекаємо на ваш відгук</h2>
+				<form action="https://ascendant-bloom-413015.nw.r.appspot.com/api/v1/review" method="POST" class="popup__form" data-ajax>
+					<div class="popup__fields">
+						<input type="text" required data-validate data-required="text" data-error="Введіть ваше ім'я" autocomplete="off" name="name" placeholder="Ваше ім'я" class="popup__input input">
+						<input type="text" required data-validate data-required="email" data-error="Введіть коректний E-mail" placeholder="Ваш E-mail" name="email" class="popup__input popup__input--email input">
+						<textarea autocomplete="off" name="review" placeholder="Напишіть про нас" class="input popup__input popup__textarea" data-autoheight></textarea>
+						<input type="text" value="1" name="date" hidden>
+					</div>
+					<div class="popup__rating rating rating_set">
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="value">
+								<input type="radio" class="rating__item" value="2" name="value">
+								<input type="radio" class="rating__item" value="3" name="value">
+								<input type="radio" class="rating__item" value="4" name="value">
+								<input type="radio" class="rating__item" value="5" name="value">
+								<input hidden checked type="radio" class="rating__item" value="0" name="value">
+							</div>
+						</div>
+						<div class="rating__value">0</div>
+					</div>
+					<button type="submit" class="popup__button button">Надіслати відгук</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240303223038"></script>
 </body>
 
 </html>
