@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Історія заявок"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="admin-page page">
+			<aside class="admin-sidebar">
+				<div class="admin-sidebar__logo">
+					<a href="home.html">
+						<img src="@img/logo.svg" alt="Logo">
+					</a>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<div class="admin-sidebar__item">
+						<a href="admin-applications.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/reservations.svg" class="admin-sidebar__icon" alt="Бронювання">
+							<span class="admin-sidebar__label">Заявки на бронювання</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-history.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/history.svg" class="admin-sidebar__icon" alt="Історія">
+							<span class="admin-sidebar__label">Історія заявок</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-reviews.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/reviews.svg" class="admin-sidebar__icon" alt="Відгуки">
+							<span class="admin-sidebar__label">Відгуки</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-edit.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/edit.svg" class="admin-sidebar__icon" alt="Редагування">
+							<span class="admin-sidebar__label">Редагування</span>
+						</a>
+					</div>
+				</nav>
+				<div class="admin-sidebar__profile">
+					<img src="@img/admin-cabinet/icons/person.svg" class="admin-sidebar__icon" alt="User">
+					<div class="admin-sidebar__profile-body">
+						<div class="admin-sidebar__name"><span>Name Surname</span></div>
+						<div class="admin-sidebar__email"><span>panorama.skhodnitsa@gmail.com</span></div>
+					</div>
+				</div>
+				<div class="admin-sidebar__exit">
+					<button type="button" class="admin-sidebar__exit-btn">Вихід</button>
+				</div>
+			</aside>
+			<section class="admin">
+				<h1 class="admin__title">Історія заявок</h1>
+				<div class="admin__spollers" id="history-list">
+					<div class="admin__empty">
+						<span>Історія заявок на бронювання порожня</span>
+						<img src="img/admin-cabinet/hourglass.gif" alt="Пісочний годинник">
+					</div>
+					<details class="admin__item item-admin">
+						<summary class="item-admin__title">Test</summary>
+						<div class="item-admin__body">
+							<div class="item-admin__info">
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--01 ">Ім’я:</div>
+									<div class="item-admin__value"><span>Test</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--02">Пошта:</div>
+									<a href="mailto:test@gmail.com" class="item-admin__value"><span>test@gmail.com</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--03">Номер телефону:
+									</div>
+									<a href="tel:06798765432" class="item-admin__value"><span>Test</span></a>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--04">Дата заїзду:</div>
+									<div class="item-admin__value"><span>Test</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--05">Дата виїзду:</div>
+									<div class="item-admin__value"><span>Test</span></div>
+								</div>
+								<div class="item-admin__row">
+									<div class="item-admin__key item-admin__key--06">К-сть осіб:</div>
+									<div class="item-admin__value"><span>Test</span></div>
+								</div>
+							</div>
+							<div class="item-admin__status status-item-admin">
+								<div class="status-item-admin__key">Статус:</div>
+								<div class="status-item-admin__value">
+									<img src="@img/admin-cabinet/icons/confirmed.svg" class="status-item-admin__icon"
+										alt="Підтверджено">
+									<span>Підтверджено</span>
+								</div>
+							</div>
+						</div>
+					</details>
+				</div>
+				<div class="admin__pagination">
+					<button type="submit" class="admin__pagination--left button _icon-arrow-1" id="page-left"></button>
+					<button type="submit" class="admin__pagination--right button _icon-arrow-1" id="page-right"></button>
+				</div>
+			</section>
+		</main>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

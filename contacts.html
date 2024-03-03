@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Контакти"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="hero">
+				<div class="hero__body">
+					<div class="hero__logo">
+						<img src="@img/logo.svg" alt="Логопит">
+					</div>
+					<h1 class="hero__title hero__title--small">КОНТАКТИ</h1>
+				</div>
+				<div class="hero__bgimage hero__bgimage--contacts">
+					<img data-src="@img/contactspage/bg.jpg" alt="Фон">
+				</div>
+				<button type="button" class="scroll-down" data-goto=".map" data-goto-header></button>
+			</section>
+			<section class="map" data-watch data-watch-threshold="0.3">
+				<iframe class="map__iframe"
+					data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.759335167075!2d23.339518603136653!3d49.22409110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3526b2543f3d%3A0x78020374a5928970!2z0JfQsNC80L7QuiDQn9Cw0L3QvtGA0LDQvNCw!5e0!3m2!1suk!2sua!4v1700473289318!5m2!1suk!2sua"
+					style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="map__contacts contacts-map">
+					<h2 class="contacts-map__title">Контакти</h2>
+					<div class="contacts-map__body">
+						<div class="contacts-map__address">
+							<a href="https://maps.app.goo.gl/J5YqfDigqbrMAu5z6" target="_blank">Львівська обл. Дрогобицький
+								район, смт. Східниця, вул. Промислова,
+								37-Б</a>
+						</div>
+						<div class="contacts-map__phone">Телелефони: <br>
+							<a href="tel:0664397774">+38 (066)439-77-74</a><br>
+							<a href="tel:0980397774">+38 (098) 039-77-74</a>
+						</div>
+						<div class="contacts-map__email">E-mail:
+							<a href="mailto:panorama.skhodnitsa@gmail.com">panorama.skhodnitsa@gmail.com</a>
+						</div>
+					</div>
+					<a href="#" class="contacts-map__button button button--w button--fw">Забронювати номер</a>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

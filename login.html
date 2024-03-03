@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Вхід"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="admin-login page">
+			<div class="admin-login__container">
+				<form method="POST" class="admin-login__form">
+					<h1 class="admin-login__title">Вхід в кабінет адміністратора</h1>
+					<input type="text" name="name" placeholder="Name"
+						class="admin-login__input admin-login__input--email input">
+					<!-- <input type="text" name="email" data-required="email" placeholder="E-mail"
+						class="admin-login__input admin-login__input--email input"> -->
+					<div class="admin-login__line">
+						<input type="password" name="password" placeholder="Password" autocomplete="off"
+							class="admin-login__input input">
+						<button class="admin-login__viewpass" type="button"></button>
+					</div>
+					<button type="submit" class="admin-login__button button">УВІЙТИ</button>
+				</form>
+			</div>
+		</main>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

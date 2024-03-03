@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/_head.htm',{
+"title":"Редагування номеру"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="admin-page page">
+			<aside class="admin-sidebar">
+				<div class="admin-sidebar__logo">
+					<a href="home.html">
+						<img src="@img/logo.svg" alt="Logo">
+					</a>
+				</div>
+				<nav class="admin-sidebar__menu">
+					<div class="admin-sidebar__item">
+						<a href="admin-applications.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/reservations.svg" class="admin-sidebar__icon" alt="Бронювання">
+							<span class="admin-sidebar__label">Заявки на бронювання</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-history.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/history.svg" class="admin-sidebar__icon" alt="Історія">
+							<span class="admin-sidebar__label">Історія заявок</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-reviews.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/reviews.svg" class="admin-sidebar__icon" alt="Відгуки">
+							<span class="admin-sidebar__label">Відгуки</span>
+						</a>
+					</div>
+					<div class="admin-sidebar__item">
+						<a href="admin-edit.html" class="admin-sidebar__link">
+							<img src="@img/admin-cabinet/icons/edit.svg" class="admin-sidebar__icon" alt="Редагування">
+							<span class="admin-sidebar__label">Редагування</span>
+						</a>
+					</div>
+				</nav>
+				<div class="admin-sidebar__profile">
+					<img src="@img/admin-cabinet/icons/person.svg" class="admin-sidebar__icon" alt="User">
+					<div class="admin-sidebar__profile-body">
+						<div class="admin-sidebar__name"><span>Name Surname</span></div>
+						<div class="admin-sidebar__email"><span>panorama.skhodnitsa@gmail.com</span></div>
+					</div>
+				</div>
+				<div class="admin-sidebar__exit">
+					<button type="button" class="admin-sidebar__exit-btn">Вихід</button>
+				</div>
+			</aside>
+			<section class="admin">
+				<h1 class="admin__title">Редагування ціни номеру</h1>
+				<div class="admin__edit edit-admin" id="admin-edit">
+					<!-- <form action="https://ascendant-bloom-413015.nw.r.appspot.com/api/v1/room" method="POST"
+						class="edit-admin__form">
+						<select name="statusId" data-class-modif="form" class="edit-admin__select">
+							<option value="1" selected>Півлюкс</option>
+							<option value="2">Люкс однокімнатний</option>
+							<option value="3">Апартаменти</option>
+							<option value="4">Апартаменти з кухнею</option>
+							<option value="5">Преміум апартаменти</option>
+						</select>
+						<input type="text" name="name" placeholder="Назва номеру" class="edit-admin__input input">
+						<input type="text" name="description" placeholder="Опис" class="edit-admin__input input">
+						<input type="text" name="price" placeholder="Ціна" class="edit-admin__input input">
+						<input type="text" name="id" hidden class="edit-admin__input input">
+						<button type="submit" class="button">Send</button>
+					</form> -->
+				</div>
+			</section>
+		</main>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
