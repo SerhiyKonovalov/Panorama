@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240314180147">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240316113103">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -200,15 +200,15 @@
 					</div>
 					<div class="warn__item">
 						<div class="warn__icon">
-							<img src="img/warn/handshake.svg" alt="Іконка">
+							<img src="img/warn/discount.svg" alt="Іконка Знижки">
 						</div>
-						<div class="warn__text">Передплата — 30%</div>
+						<div class="warn__text">Знижка на проживання від 5 діб — 15%</div>
 					</div>
 					<div class="warn__item">
 						<div class="warn__icon">
-							<img src="img/warn/discount.svg" alt="Іконка Знижки">
+							<img src="img/warn/handshake.svg" alt="Іконка">
 						</div>
-						<div class="warn__text">Знижка на проживання від 5 діб -15%</div>
+						<div class="warn__text">Передплата — 30%</div>
 					</div>
 					<div class="warn__item">
 						<div class="warn__icon">
@@ -448,26 +448,29 @@
 						<textarea autocomplete="off" name="review" placeholder="Напишіть про нас" class="input popup__input popup__textarea" data-autoheight></textarea>
 						<input type="text" value="1" name="date" hidden>
 					</div>
-					<div class="popup__rating rating rating_set">
-						<div class="rating__body">
-							<div class="rating__active"></div>
-							<div class="rating__items">
-								<input type="radio" class="rating__item" value="1" name="value">
-								<input type="radio" class="rating__item" value="2" name="value">
-								<input type="radio" class="rating__item" value="3" name="value">
-								<input type="radio" class="rating__item" value="4" name="value">
-								<input type="radio" class="rating__item" value="5" name="value">
-								<input hidden checked type="radio" class="rating__item" value="0" name="value">
+					<div class="popup__rating">
+						<span class="popup__label">Оцініть нас:</span>
+						<div class="rating rating_set">
+							<div class="rating__body">
+								<div class="rating__active"></div>
+								<div class="rating__items">
+									<input type="radio" class="rating__item" value="1" name="value">
+									<input type="radio" class="rating__item" value="2" name="value">
+									<input type="radio" class="rating__item" value="3" name="value">
+									<input type="radio" class="rating__item" value="4" name="value">
+									<input type="radio" class="rating__item" value="5" name="value">
+									<input hidden checked type="radio" class="rating__item" value="0" name="value">
+								</div>
 							</div>
+							<div class="rating__value">0</div>
 						</div>
-						<div class="rating__value">0</div>
 					</div>
 					<button type="submit" class="popup__button button">Надіслати відгук</button>
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240314180147"></script>
+	<script src="js/app.min.js?_v=20240316113103"></script>
 </body>
 
 </html>
