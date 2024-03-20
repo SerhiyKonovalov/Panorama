@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240316212144">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240320134212">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -193,6 +193,7 @@
 								<input type="tel" pattern="\+\d{12}" required data-validate value="+38" data-required="number" data-error="Ваш телефон" autocomplete="off" name="phoneNumber" placeholder="Номер телефону" class="book-room__input input" data-tippy-content="Введіть ваш номер для зв'язку">
 								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="startDate" placeholder="Дата заїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-in data-tippy-content="Оберіть дату вашого заїзду">
 								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="endDate" placeholder="Дата виїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-out data-tippy-content="Оберіть дату вашого виїзду">
+								<span class="book-room__discount">*Пропонуємо знижку 15% на проживання від 5 діб</span>
 								<div class="book-room__quantity-wr">
 									<h5>Кількість осіб:</h5>
 									<div data-quantity class="book-room__quantity quantity" data-tippy-content="Оберіть кількість осіб (макс. 4)">
@@ -365,7 +366,8 @@
 						</div>
 					</div>
 					<div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
-						<a href="#" data-popup="#popup" class="reviews__button button button--w">Залишити відгук</a>
+						<button type="button" data-popup="#popup" class="reviews__button button button--w">Залишити
+							відгук</button>
 					</div>
 				</div>
 			</section>
@@ -492,7 +494,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240316212144"></script>
+	<script src="js/app.min.js?_v=20240320134212"></script>
 </body>
 
 </html>

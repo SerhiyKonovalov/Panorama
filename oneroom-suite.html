@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240316212144">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240320134212">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -176,6 +176,7 @@
 								<input type="tel" pattern="\+\d{12}" required data-validate value="+38" data-required="number" data-error="Ваш телефон" autocomplete="off" name="phoneNumber" placeholder="Номер телефону" class="book-room__input input" data-tippy-content="Введіть ваш номер для зв'язку">
 								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="startDate" placeholder="Дата заїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-in data-tippy-content="Оберіть дату вашого заїзду">
 								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="endDate" placeholder="Дата виїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-out data-tippy-content="Оберіть дату вашого виїзду">
+								<span class="book-room__discount">*Пропонуємо знижку 15% на проживання від 5 діб</span>
 								<div class="book-room__quantity-wr">
 									<h5>Кількість осіб:</h5>
 									<div data-quantity class="book-room__quantity quantity" data-tippy-content="Оберіть кількість осіб (макс. 3)">
@@ -348,7 +349,8 @@
 						</div>
 					</div>
 					<div class="reviews__button-wr" data-watch data-watch-threshold="0.3">
-						<a href="#" data-popup="#popup" class="reviews__button button button--w">Залишити відгук</a>
+						<button type="button" data-popup="#popup" class="reviews__button button button--w">Залишити
+							відгук</button>
 					</div>
 				</div>
 			</section>
@@ -356,20 +358,21 @@
 				<iframe class="map__iframe" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.759335167075!2d23.339518603136653!3d49.22409110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a3526b2543f3d%3A0x78020374a5928970!2z0JfQsNC80L7QuiDQn9Cw0L3QvtGA0LDQvNCw!5e0!3m2!1suk!2sua!4v1700473289318!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				<div class="map__contacts contacts-map">
 					<h2 class="contacts-map__title">Контакти</h2>
-					<div class="contacts-map__body">
+					<address class="contacts-map__body">
 						<div class="contacts-map__address">
 							<a href="https://maps.app.goo.gl/J5YqfDigqbrMAu5z6" target="_blank">Львівська обл., Дрогобицький
-								район, смт. Східниця, вул. Промислова,
-								37-Б</a>
+								район, смт. Східниця, вул. Промислова, 37-Б</a>
 						</div>
-						<div class="contacts-map__phone">Телелефони: <br>
-							<a href="tel:0664397774">+38 (066)439-77-74</a><br>
+						<div class="contacts-map__phone">
+							<span>Телелефони:</span><br>
+							<a href="tel:0664397774">+38 (066) 439-77-74</a><br>
 							<a href="tel:0980397774">+38 (098) 039-77-74</a>
 						</div>
-						<div class="contacts-map__email">E-mail:
+						<div class="contacts-map__email">
+							<span>E-mail:</span>
 							<a href="mailto:panorama.skhodnitsa@gmail.com">panorama.skhodnitsa@gmail.com</a>
 						</div>
-					</div>
+					</address>
 					<a href="rooms.html" class="contacts-map__button button button--w button--fw">Забронювати номер</a>
 				</div>
 			</section>
@@ -475,7 +478,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240316212144"></script>
+	<script src="js/app.min.js?_v=20240320134212"></script>
 </body>
 
 </html>
