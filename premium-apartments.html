@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240320134212">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240321172130">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<!-- <link rel="alternate icon" type="image/x-icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -47,7 +47,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="hero-room">
+			<section class="hero-room" data-fullscreen>
 				<div class="hero-room__slider swiper">
 					<div class="hero-room__wrapper swiper-wrapper">
 						<div class="hero-room__slide hero-room__slide--premium-1 swiper-slide">
@@ -92,10 +92,17 @@
 							<div class="about-room__text-wr" data-watch data-watch-threshold="0.2">
 								<div class="about-room__text">
 									<p>
+										Цей номер вам запропонує 50 квадратних метрів чистого простору, щоб насолоджуватися
+										комфортом та видом. А ще — затишний балкон для вашого відпочинку.
+									</p>
+									<p>
+										Відпочиньте з комфортом у нашому найпростішому номері преміум-класу!
+										Просторий дизайн, елегантні меблі та мальовничий вид з вікна гарантують Вам незабутні
+										враження.
+										Затишний балкон стане ідеальним місцем для відпочинку на свіжому повітрі.
 										Це найбільший та найсвітліший номер у Замку Панорама і, який має унікальні дизайнерські
 										рішеннями та сучасне облаштування. Унікальний номер має дві просторі кімнати (велику
-										вітальню
-										і спальню) та два балкони, з яких відкривається фантастичний вигляд на карпатський
+										вітальню і спальню) та балкон, з якого відкривається фантастичний вигляд на карпатський
 										хвойний ліс.
 									</p>
 								</div>
@@ -167,10 +174,10 @@
 						<form action="https://ascendant-bloom-413015.nw.r.appspot.com/api/v1/application" method="POST" class="book-room__form" data-datepicker data-watch data-watch-threshold="0.1" data-ajax>
 							<div class="book-room__fields">
 								<input type="text" required data-validate data-required="text" data-error="Ваше ім'я" autocomplete="off" name="name" placeholder="Ваше ім'я" class="book-room__input input" data-tippy-content="Як ми можемо до Вас звертатись?">
-								<input type="text" name="email" data-required="email" data-validate data-error="Введіть коректний Email" placeholder="Ваш Email" class="book-room__input input" data-tippy-content="Введіть вашу почту для зв'язку">
-								<input type="tel" pattern="\+\d{12}" required data-validate value="+38" data-required="number" data-error="Ваш телефон" autocomplete="off" name="phoneNumber" placeholder="Номер телефону" class="book-room__input input" data-tippy-content="Введіть ваш номер для зв'язку">
-								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="startDate" placeholder="Дата заїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-in data-tippy-content="Оберіть дату вашого заїзду">
-								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="endDate" placeholder="Дата виїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-out data-tippy-content="Оберіть дату вашого виїзду">
+								<input type="text" required name="email" data-required="email" data-validate data-error="Введіть коректний Email" placeholder="Ваш Email" class="book-room__input input" data-tippy-content="Введіть Вашу пошту для зв'язку">
+								<input type="tel" pattern="\+\d{12}" required data-validate value="+38" data-required="number" data-error="Ваш телефон" autocomplete="off" name="phoneNumber" placeholder="Номер телефону" class="book-room__input input" data-tippy-content="Введіть Ваш номер для зв'язку">
+								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="startDate" placeholder="Дата заїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-in data-tippy-content="Оберіть дату Вашого заїзду">
+								<input type="text" pattern="\d{2}\.\d{2}\.\d{4}" required name="endDate" placeholder="Дата виїзду" autocomplete="off" class="book-room__input book-room__input-date input" data-datepicker-out data-tippy-content="Оберіть дату Вашого виїзду">
 								<span class="book-room__discount">*Пропонуємо знижку 15% на проживання від 5 діб</span>
 								<div class="book-room__quantity-wr">
 									<h5>Кількість осіб:</h5>
@@ -473,7 +480,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240320134212"></script>
+	<script src="js/app.min.js?_v=20240321172130"></script>
 </body>
 
 </html>
